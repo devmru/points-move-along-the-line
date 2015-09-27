@@ -1,0 +1,88 @@
+.round{
+   background: #333;
+   height: 501px;
+   width: 501px;
+   margin: 0 auto;
+   border-radius: 50%;
+}
+.line{
+   width: 501px;
+   height: 1px;
+   background: #fff;
+   position: absolute;
+   margin-top: 250px;
+}
+.line:nth-child(2){
+   transform: rotate(22.5deg);
+}
+.line:nth-child(3){
+   transform: rotate(45deg);
+}
+.line:nth-child(4){
+   transform: rotate(67.5deg);
+}
+.line:nth-child(5){
+   transform: rotate(90deg);
+}
+.line:nth-child(6){
+   transform: rotate(112.5deg);
+}
+.line:nth-child(7){
+   transform: rotate(135deg);
+}
+.line:nth-child(8){
+   transform: rotate(157.5deg);
+}
+p{
+   margin: 0;
+   display: block;
+}
+.point::before{
+   content: "•";
+   color:#fff;
+   font-size: 85px;
+   line-height: 5px;
+   margin-left: -8px;
+}
+.line:nth-child(1)>p{
+  -webkit-animation:slide 5s -2.1s ease-in-out infinite;
+  animation:slide 5s -2.1s ease-in-out infinite;
+}
+.line:nth-child(2)>p{
+   -webkit-animation:slide 5s -1.8s ease-in-out infinite;
+   animation:slide 5s -1.8s ease-in-out infinite;
+}
+.line:nth-child(3)>p{
+   -webkit-animation:slide 5s -1.5s ease-in-out infinite;
+   animation:slide 5s -1.5s ease-in-out infinite;
+}
+.line:nth-child(4)>p{
+   -webkit-animation:slide 5s -1.2s ease-in-out infinite;
+   animation:slide 5s -1.2s ease-in-out infinite;
+}
+.line:nth-child(5)>p{
+   -webkit-animation:slide 5s -0.9s ease-in-out infinite;
+   animation:slide 5s -0.9s ease-in-out infinite;
+}
+.line:nth-child(6)>p{
+   -webkit-animation:slide 5s -0.6s ease-in-out infinite;
+   animation:slide 5s -0.6s ease-in-out infinite;
+}
+.line:nth-child(7)>p{
+   -webkit-animation:slide 5s -0.3s ease-in-out infinite;
+   animation:slide 5s -0.3s ease-in-out infinite;
+}
+.line:nth-child(8)>p{
+   -webkit-animation:slide 5s ease-in-out infinite;
+   animation:slide 5s ease-in-out infinite;
+}
+@keyframes slide {
+  0% { margin-left:-1% }
+  50% { margin-left:94%; }
+  100% { margin-left:-1%; }
+}
+@-webkit-keyframes slide {
+  0% { margin-left:-1% }
+  50% { margin-left:94%; }
+  100% { margin-left:-1%; }
+}
