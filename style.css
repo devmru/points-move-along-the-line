@@ -2,7 +2,7 @@
    background: #333;
    height: 501px;
    width: 501px;
-   margin: 0 auto;
+   margin: 20px auto;
    border-radius: 50%;
 }
 .line{
@@ -85,4 +85,8 @@ p{
   0% { margin-left:-1% }
   50% { margin-left:94%; }
   100% { margin-left:-1%; }
+}
+a{
+   display: block;
+   text-align: center;
 }
