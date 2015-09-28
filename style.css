@@ -1,3 +1,7 @@
+body{
+   margin: 0;
+   font: Arial,sans-serif;
+}
 .round{
    background: #333;
    height: 501px;
@@ -35,18 +39,30 @@
 }
 p{
    margin: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   -webkit-margin-before: 0;
+   -webkit-margin-after: 0;
+   -webkit-margin-start: 0;
+   -webkit-margin-end: 0;
    display: block;
 }
-.point::before{
+/*.point::before{
    content: "•";
    color:#fff;
    font-size: 85px;
    line-height: 5px;
-   margin-left: -8px;
+}*/
+.point{
+   width: 21px;
+   height: 21px;
+   background: #fff;
+   border-radius: 50%;
+   margin-top: -10px;
 }
 .line:nth-child(1)>p{
-  -webkit-animation:slide 5s -2.1s ease-in-out infinite;
-  animation:slide 5s -2.1s ease-in-out infinite;
+   -webkit-animation:slide 5s -2.1s ease-in-out infinite;
+   animation:slide 5s -2.1s ease-in-out infinite;
 }
 .line:nth-child(2)>p{
    -webkit-animation:slide 5s -1.8s ease-in-out infinite;
@@ -77,14 +93,14 @@ p{
    animation:slide 5s ease-in-out infinite;
 }
 @keyframes slide {
-  0% { margin-left:-5px; }
-  50% { margin-left:471px; }
-  100% { margin-left:-5px; }
+   0% { margin-left:0px; }
+   50% { margin-left:480px; }
+   100% { margin-left:0px; }
 }
 @-webkit-keyframes slide {
-  0% { margin-left:-5px; }
-  50% { margin-left:471px; }
-  100% { margin-left:-5px; }
+   0% { margin-left:0px; }
+   50% { margin-left:480px; }
+   100% { margin-left:0px; }
 }
 a{
    display: block;
