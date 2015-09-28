@@ -77,14 +77,14 @@ p{
    animation:slide 5s ease-in-out infinite;
 }
 @keyframes slide {
-  0% { margin-left:-1% }
-  50% { margin-left:94%; }
-  100% { margin-left:-1%; }
+  0% { margin-left:-5px; }
+  50% { margin-left:471px; }
+  100% { margin-left:-5px; }
 }
 @-webkit-keyframes slide {
-  0% { margin-left:-1% }
-  50% { margin-left:94%; }
-  100% { margin-left:-1%; }
+  0% { margin-left:-5px; }
+  50% { margin-left:471px; }
+  100% { margin-left:-5px; }
 }
 a{
    display: block;
